@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia - Kamel & Dennise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://i.pinimg.com/736x/24/cb/16/24cb169667f4ebedc25a4fe10272621b.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: rgb(19, 18, 18);
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        /* Animación de escritura */
+        .typing-container {
+            display: flex;
+            justify-content: center;
+        }
+        .typing {
+            font-size: 28px;
+            font-weight: bold;
+            color: #e94560;
+            border-right: 4px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+            animation: typing 3s steps(30, end) forwards, blink 0.5s infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        video {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #e94560;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #ff7b9c;
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-audio" loop>
+        <source src="luna.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio HTML5.
+    </audio>
+    <div class="container">
+        <div class="typing-container">
+            <h1 class="typing">Mi Mundo Cambió Cuando Te Conocí</h1>
+        </div>
+        <video src="perfecta.mp4" autoplay loop controls></video>
+        <p>Para, Estrella</p>
+        <p>
+            Todo comenzó con un encuentro inesperado, pero desde el primer momento supe 
+            que había algo especial en ti. No fue casualidad, sino una hermosa sorpresa 
+            del destino. Tu forma de ser me atrapó desde el primer instante, y cada 
+            conversación contigo se ha convertido en un recuerdo que atesoro. Apenas 
+            estamos conociéndonos, pero ya has iluminado mis días de una manera única.
+        </p>
+        <p>
+            No hay mayor fortuna que haberte encontrado, ni obstáculo que pese cuando estás 
+            cerca. Cada sonrisa tuya ilumina mi día, cada mensaje tuyo es un motivo para 
+            sonreír, y cada momento compartido me recuerda que lo mejor de la vida es 
+            disfrutarla contigo.  
+        </p>
+        <p>
+            No sé qué nos depara el futuro, pero lo que sí sé es que quiero seguir 
+            descubriéndolo contigo. No importa los retos que vengan ni las historias que 
+            escribamos, lo esencial es que estés ahí, compartiendo cada momento a mi lado.
+        </p>
+        <p>
+            Desde que te conocí, cada día se ha vuelto un poco más especial. No importa 
+            el tiempo o la conversación, siempre logras sacarme una sonrisa. Y aunque 
+            aún estoy descubriendo más sobre ti, cada detalle te hace única y eso me 
+            encanta. ✨💖  
+        </p>
+        <p>Con todo mi cariño, Carlos</p>
+        <div class="buttons">
+            <button class="btn" onclick="alert('Estrella, hay personas que iluminan el día sin darse cuenta, y tú eres una de ellas. Con cada palabra y cada risa, haces que todo sea más especial. No sé hasta dónde nos llevará este camino, pero por ahora, disfruto cada paso a tu lado.💖')">Mensaje Especial 1</button>
+            <button class="btn" onclick="alert('Desde que comenzamos a hablar, supe que había algo especial en ti. Cada risa, cada conversación y hasta esos pequeños momentos inesperados hacen que disfrute más conocerte. ✨💖')">Mensaje Especial 2</button>
+        </div>
+    </div>
+    <script>
+        function toggleAudio() {
+            var audio = document.getElementById('background-audio');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>
